@@ -25,6 +25,7 @@ background: radial-gradient(circle, rgba(23,42,135,1) 0%, rgba(0,0,0,1) 35%);
         100%{
             transform:  translateY(-50px);
         }
+        
     }
     .center{
         h1{
@@ -38,5 +39,8 @@ background: radial-gradient(circle, rgba(23,42,135,1) 0%, rgba(0,0,0,1) 35%);
              opacity: 1;
              color: white;
         }
+    }
+    .flexivel{
+        cursor: pointer;
     }
 `

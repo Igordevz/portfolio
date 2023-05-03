@@ -4,6 +4,14 @@ export const HeaderContent = styled.div`
   position: fixed;
   height: 80px;
   width: 100%;
+  z-index: 99;
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.84);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.6px);
+-webkit-backdrop-filter: blur(7.6px);
+border: 1px solid rgba(0, 0, 0, 0.3);
 `;
 export const Logo = styled.div`
   height: 80px;
