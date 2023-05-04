@@ -52,17 +52,28 @@ export const CardLeft = styled.div`
       margin-top: 30px;
       margin-bottom: 30px;
     }
-    a {
-      border-radius: 10px;
-      margin-top: 50px;
-      text-decoration: none;
-      padding: 10px;
-      border: 1px solid #7d7d7e;
-        color: white;
-        transition: 1s;
+    .line{
+        display: flex;
+        width: 0px;
+      }
+    a{
+      color: white;
+      .char{
+        background: none;
+        display: none;
+      }
+      position: relative;
     }
-
+   
     a:hover{
+      .char{
+        display: none;
+        background: white;
+      }
+    }
+    
+  
+    #github:hover{
         border: 1px solid #7d27c1;
         background-image: -webkit-linear-gradient(0deg, #a836ff 16%, #0826d1 78%);
       background-clip: text;
