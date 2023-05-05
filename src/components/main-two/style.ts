@@ -25,16 +25,18 @@ export const Container = styled.div`
 export const CardLeft = styled.div`
   margin-left: 60px;
   border-radius: 25px;
-
   img {
-    border-radius: 20px;
-    height: 400px;
+    border-radius: 10px;
+    height: 320px;
     width: 500px;
     cursor: pointer;
   }
+  strong{
+    margin-left: 4px;
+  }
   display: flex;
   align-items: center;
-  flex-direction: row;
+  justify-content: center;
   .items {
     margin-left: 20px;
     h1 {
@@ -42,6 +44,8 @@ export const CardLeft = styled.div`
       font-size: 14px;
     }
     h2 {
+      display: flex;
+      flex-wrap: wrap;
       font-size: 20px;
       font-weight: 200;
       margin-top: 20px;
@@ -57,29 +61,38 @@ export const CardLeft = styled.div`
         width: 0px;
       }
     a{
+
       color: white;
       .char{
         background: none;
-        display: none;
+        display: flex;
+        filter: blur(5px);
+       
       }
       position: relative;
     }
    
     a:hover{
+   
       .char{
-        display: none;
+        filter: blur(0);
         background: white;
+        display: none;
       }
     }
     
-  
+  #github{
+    border: 1px solid #7d27c1;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all.5s;
+    color: #7d27c1;
+  }
     #github:hover{
-        border: 1px solid #7d27c1;
-        background-image: -webkit-linear-gradient(0deg, #a836ff 16%, #0826d1 78%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      text-fill-color: transparent;
-      -webkit-text-fill-color: transparent;
+        background: #7229E6;
+        color: #e3e4e6;
+        border: 1px;
     }
     color: #e3e4e6;
   }

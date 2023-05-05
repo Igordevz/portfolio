@@ -10,7 +10,7 @@ export default function Header(){
         <NavBar>
             <nav>
                <a href="#" id="one">HOME</a>
-              <a href="#" id="two">WORK</a>
+              <a href="#" id="two">PROJECTS</a>
               <a href="#" id="three">ABOUT</a>
             </nav>
         </NavBar>
