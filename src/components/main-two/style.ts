@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: #000;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   position: relative;
   .title {
@@ -24,14 +25,24 @@ export const Container = styled.div`
 `;
 export const CardLeft = styled.div`
   margin-left: 60px;
+  margin-top: 150px;
   border-radius: 25px;
+  
+  :nth-child(even){
+    flex-direction: row-reverse;
+  }
   img {
-    border-radius: 10px;
+    border-radius: 30px 30px 30px 0px;
     height: 320px;
     width: 500px;
     cursor: pointer;
   }
-  strong{
+  :nth-child(2){
+    img{
+    border-radius: 30px 30px 0px 30px;
+    }
+  }
+  strong {
     margin-left: 4px;
   }
   display: flex;
@@ -56,44 +67,52 @@ export const CardLeft = styled.div`
       margin-top: 30px;
       margin-bottom: 30px;
     }
-    .line{
-        display: flex;
-        width: 0px;
-      }
-    a{
-
+    .line {
+      display: flex;
+      width: 0px;
+    }
+    a {
       color: white;
-      .char{
+      text-decoration: none;
+      .char {
         background: none;
         display: flex;
         filter: blur(5px);
-       
       }
       position: relative;
     }
-   
-    a:hover{
-   
-      .char{
+
+    a:hover {
+      transition: 1s;
+      .char {
         filter: blur(0);
-        background: white;
+        background: #7229E6;
         display: none;
       }
+      color: #7229e6;
     }
-    
-  #github{
-    border: 1px solid #7d27c1;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: all.5s;
-    color: #7d27c1;
-  }
-    #github:hover{
-        background: #7229E6;
-        color: #e3e4e6;
-        border: 1px;
+
+    #github {
+      border: 1px solid #7d27c1;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 30px 30px 30px 0px;
+      transition: all.5s;
+      color: #7d27c1;
+    }
+    #github:hover {
+      color: pink;
+      border: 1px solid pink;
     }
     color: #e3e4e6;
   }
 `;
+
+export const Line = styled.div`
+   position: absolute;
+   bottom: 150px;
+    height: 1px;
+    width: 80%;
+    background: gray;
+
+`

@@ -1,9 +1,9 @@
-import { CardLeft, Container } from "./style";
+import { CardLeft, Container, Line } from "./style";
 import projectone from "../../assets/project1.png";
 import { useEffect } from "react";
 import SplitType from "split-type";
 import { gsap } from "gsap";
-
+import projectTwo from '../../assets/project2.png'
 export default function MainTwo() {
   useEffect(() => {
     
@@ -49,7 +49,7 @@ export default function MainTwo() {
       <CardLeft>
         <img src={projectone} alt="" />
         <div className="items">
-          <h1>Real estate Template</h1>
+          <h1>Chat-Gpt interation</h1>
           <h2>
             this project is based on the idea of recreating{" "}
             <strong>
@@ -74,6 +74,37 @@ export default function MainTwo() {
           </a>
         </div>
       </CardLeft>
+      <CardLeft>
+        <img src={projectTwo} alt="" />
+        <div className="items">
+          <h1>Instagram UI</h1>
+          <h2>
+            this project is based on the idea of recreating{" "}
+
+            <strong>
+              <a href="https://chat.openai.com/" target="_blank" id="gpt">
+               Instagram
+              </a>
+            </strong>{" "}
+
+             using its api available on{" "}
+            <strong>
+              <a href="https://openai.com/" target="_blank" id="openai">
+              OpenAi
+              </a>
+            </strong>
+          </h2>
+          <p>Website Fullstack</p>
+          <a
+            href="https://gpt-project3.netlify.app/"
+            target="_blank"
+            id="github"
+          >
+            VIEW PROJECT
+          </a>
+        </div>
+      </CardLeft>
+    <Line/>
     </Container>
   );
 }

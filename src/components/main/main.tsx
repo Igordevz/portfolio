@@ -15,7 +15,7 @@ export default function Main(){
         <div>
             <ContentMain>
                 <div className="center">
-                    <h1>I’m a designer specialising in <strong>Developer</strong> and <strong>Interaction Design</strong></h1>
+                    <h1>I’m a Programmer specialising in <strong>Design</strong> and <strong>Developer FullStack</strong></h1>
                 </div>
                 <div className="flexivel"  id='setaDown' > 
                    <img src={ceta} alt=""/>
