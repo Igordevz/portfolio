@@ -1,6 +1,7 @@
 import { Container } from "./style";
 import seta from "../../assets/ceta.png";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+
 export default function SemiFooter() {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0.17, 0.18, 0.21], [0, 1, 0]);
