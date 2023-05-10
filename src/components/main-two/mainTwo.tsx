@@ -4,25 +4,14 @@ import { useEffect } from "react";
 import SplitType from "split-type";
 import { gsap } from "gsap";
 import projectTwo from '../../assets/project2.png'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 export default function MainTwo() {
   useEffect(() => {
-    
+    gsap.registerPlugin(ScrollTrigger)
     new SplitType("#gpt");
     new SplitType("#openai");
     const hover = document.getElementById("gpt")
-    const openai = document.getElementById("openai")
-    openai?.addEventListener("mouseover", () =>{
-      gsap.to(".char", {
-        display: "inline-block",
-        flexDirection: "row",
-        filter: "blur(0px)",
-        stagger: 0.05,
-        delay: 0.5,
-        duration: 1,
-        opacity: 1,
-        background: "none",
-      });
-    })
+
     hover?.addEventListener("mouseover", () =>{
       gsap.to(".char", {
         display: "inline-block",
@@ -32,6 +21,7 @@ export default function MainTwo() {
         delay: 0.2,
         duration: 1,
         opacity: 1,
+        scrollTrigger: ".items",
         background: "none",
       });
     })
