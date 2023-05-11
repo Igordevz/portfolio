@@ -1,4 +1,4 @@
-import { Container, ContainerThree, ContainerTour, MainContent, NavMenu } from "./style";
+import { Container, ContainerTour, MainContent, NavMenu } from "./style";
 import { useEffect, useState } from 'react'
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import gsap from 'gsap'
