@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: #000;
+
+  strong{
+    margin-right: 5px;
+  }
   height: 200vh;
   display: flex;
   align-items: center;
@@ -12,7 +16,6 @@ export const Container = styled.div`
     position: absolute;
     top: 0;
     margin-top: 50px;
-    margin-left: 60px;
   }
   .title h1 {
     color: #7d7e81;
@@ -22,15 +25,20 @@ export const Container = styled.div`
   .title strong {
     color: white;
   }
+  @media (max-width: 1042px){
+    height: 100vh;
+    .title{
+     margin-left: 0px;
+    } 
+  }
+  @media (max-height:653px){
+    
+    height: 150vh;
+  }
 `;
 export const CardLeft = styled.div`
-  margin-left: 60px;
   margin-top: 150px;
   border-radius: 25px;
-  
-  :nth-child(even){
-    flex-direction: row-reverse;
-  }
   img {
     border-radius: 30px 30px 30px 0px;
     height: 320px;
@@ -49,7 +57,7 @@ export const CardLeft = styled.div`
   align-items: center;
   justify-content: center;
   .items {
-    margin-left: 20px;
+    margin-left: 40px;
     h1 {
       margin-top: 50px;
       font-size: 14px;
@@ -77,7 +85,6 @@ export const CardLeft = styled.div`
       .char {
         background: none;
         display: flex;
-        filter: blur(5px);
       }
       position: relative;
     }
@@ -85,34 +92,31 @@ export const CardLeft = styled.div`
     a:hover {
       transition: 1s;
       .char {
-        filter: blur(0);
-        background: #7229E6;
+        background: gray;
         display: none;
       }
-      color: #7229e6;
+      color: white;
     }
 
     #github {
       border: 1px solid #7d27c1;
       padding: 10px;
       text-decoration: none;
-      border-radius: 30px 30px 30px 0px;
+      border-radius:10px 10px  10px 0px;
       transition: all.5s;
       color: #7d27c1;
     }
     #github:hover {
-      color: pink;
-      border: 1px solid pink;
+      color: white;
+      border: 1px solid white;
     }
     color: #e3e4e6;
   }
+  @media (max-width: 1042px){
+    margin-top: 90px;
+    img{
+      display: none;
+    }
+  }
 `;
 
-export const Line = styled.div`
-   position: absolute;
-   bottom: 150px;
-    height: 1px;
-    width: 80%;
-    background: gray;
-
-`

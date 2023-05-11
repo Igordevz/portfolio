@@ -1,4 +1,4 @@
-import { CardLeft, Container, Line } from "./style";
+import { CardLeft, Container } from "./style";
 import projectone from "../../assets/project1.png";
 import { useEffect } from "react";
 import SplitType from "split-type";
@@ -37,7 +37,6 @@ export default function MainTwo() {
         </h1>
       </div>
       <CardLeft>
-        <img src={projectone} alt="" />
         <div className="items">
           <h1>Chat-Gpt interation</h1>
           <h2>
@@ -65,7 +64,6 @@ export default function MainTwo() {
         </div>
       </CardLeft>
       <CardLeft>
-        <img src={projectTwo} alt="" />
         <div className="items">
           <h1>Instagram UI</h1>
           <h2>
@@ -90,7 +88,8 @@ export default function MainTwo() {
           </a>
         </div>
       </CardLeft>
-    <Line/>
+      
     </Container>
   );
 }
+// deixar um ver mais e abri no github

@@ -16,8 +16,6 @@ export default function SemiFooter() {
   const { scrollYProgress } = useViewportScroll()
   const [menus, setMenus] = useState(true)
   const scale = useTransform(scrollYProgress, [0.60, 0.70], [0, 1]);
-  const scroll = useTransform(scrollYProgress, [0, 1], [0, 300]);
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
 
@@ -109,11 +107,6 @@ export default function SemiFooter() {
             </NavMenu>
 
             <MainContent>
-              <div className="scroll">
-                <motion.div style={{ height: scroll, width: 3, background: "#0080FF" }}>
-
-                </motion.div>
-              </div>
               <div className="title">
                 <h1 id="brand">Brazil</h1>
                 <p id="textinfo">I'm from Brazil, I specialized in Front-End and today I'm fullstack, I also develop in mobiles</p>
@@ -125,7 +118,7 @@ export default function SemiFooter() {
               </div>
             </MainContent>
           </ContainerTour>
-             
+
         </motion.div>
       </Container>
 

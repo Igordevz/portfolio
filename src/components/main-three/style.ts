@@ -119,6 +119,14 @@ export const ContainerTour = styled.div`
       z-index: 99;
     }
   }
+  @media (max-width: 584px){
+    header nav h1{
+      display: none;
+    }
+    header nav{
+      right: 40px;
+    }
+  }
 `;
 export const NavMenu = styled.div`
   position: fixed;
@@ -137,8 +145,8 @@ export const MainContent = styled.div`
     gap: 50px;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     color: black;
-    flex-direction: row;
   }
   .title .char {
     transform: translateY(115px);
@@ -174,6 +182,8 @@ export const MainContent = styled.div`
     animation: girator 11s infinite ease-out;
     flex-direction: row;
     color: black;
+    position: absolute;
+    bottom: 40px;
     gap: 350px;
   }
   .swiperx h2 {
@@ -189,6 +199,32 @@ export const MainContent = styled.div`
     }
     100% {
       transform: translateX(0px);
+    }
+  }
+  @media (max-width: 1102px){
+    .title h1{
+      font-size: 150px;
+    }
+  }
+  @media (max-width: 850px){
+    .title h1{
+      font-size: 100px;
+    }
+    .title p{
+      font-size: 14px;
+      max-width: 200px;
+    }
+    
+  }
+  @media (max-width: 568px){
+    .title{
+      gap: 20px;
+    }
+    .title p{
+    margin-left: 50px;
+    }
+    .title h1{
+      font-size: 80px;
     }
   }
 `;
