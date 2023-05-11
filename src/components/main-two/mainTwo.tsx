@@ -1,9 +1,7 @@
 import { CardLeft, Container } from "./style";
-import projectone from "../../assets/project1.png";
 import { useEffect } from "react";
 import SplitType from "split-type";
 import { gsap } from "gsap";
-import projectTwo from '../../assets/project2.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 export default function MainTwo() {
   useEffect(() => {
