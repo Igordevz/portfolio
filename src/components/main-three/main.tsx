@@ -81,7 +81,7 @@ export default function SemiFooter() {
 
   return (
     <>
-      <Container style={{ color: "white" }} className=".bg" >
+      <Container style={{ color: "white" }} className=".bg" id="items-about" >
 
         <div id="Container">
         </div>

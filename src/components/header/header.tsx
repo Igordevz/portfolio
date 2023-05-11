@@ -1,7 +1,6 @@
 import { HeaderContent, Logo, NavBar } from "./style";
 export default function Header(){
-    
- 
+
     return(
       <HeaderContent>
         <Logo>
@@ -10,8 +9,8 @@ export default function Header(){
         <NavBar>
             <nav>
                <a href="#" id="one">HOME</a>
-              <a href="#" id="two">PROJECTS</a>
-              <a href="#" id="three">ABOUT</a>
+              <a href="#projetos" id="two">PROJECTS</a>
+              <a href="#items-about" id="three">ABOUT</a>
             </nav>
         </NavBar>
       </HeaderContent>

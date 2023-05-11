@@ -31,7 +31,7 @@ export default function MainTwo() {
 
   return (
     <Container>
-      <div className="title">
+      <div className="title" id="projetos">
         <h1>
           Selected <strong>Projects</strong>
         </h1>
@@ -72,21 +72,17 @@ export default function MainTwo() {
             this project is based on the idea of recreating{" "}
 
             <strong>
-              <a href="https://chat.openai.com/" target="_blank" id="gpt">
+              <a href="https://www.instagram.com/euigor_santoss/" target="_blank" id="gpt">
                Instagram
               </a>
             </strong>{" "}
-
-             using its api available on{" "}
             <strong>
-              <a href="https://openai.com/" target="_blank" id="openai">
-              OpenAi
-              </a>
+              
             </strong>
           </h2>
           <p>Website Fullstack</p>
           <a
-            href="https://gpt-project3.netlify.app/"
+            href="https://www.instagram.com/euigor_santoss/"
             target="_blank"
             id="github"
           >
