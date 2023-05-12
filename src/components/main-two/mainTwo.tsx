@@ -68,7 +68,7 @@ export default function MainTwo() {
             this project is based on the idea of recreating{" "}
 
             <strong>
-              <a href="https://www.instagram.com/euigor_santoss/" target="_blank" id="gpt">
+              <a href="www.instagram.com" target="_blank" id="gpt">
                Instagram
               </a>
             </strong>{" "}
@@ -78,7 +78,7 @@ export default function MainTwo() {
           </h2>
           <p>Website Fullstack</p>
           <a
-            href="https://www.instagram.com/euigor_santoss/"
+            href="https://instagram-pc.netlify.app/"
             target="_blank"
             id="github"
           >

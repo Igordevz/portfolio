@@ -8,17 +8,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 import menu from '../../assets/menu.png'
 import SplitType from "split-type";
 
 export default function SemiFooter() {
   const { scrollYProgress } = useViewportScroll()
   const [menus, setMenus] = useState(true)
-  const scale = useTransform(scrollYProgress, [0.60, 0.70], [0, 1]);
+  const scale = useTransform(scrollYProgress, [0.65, 0.70], [0, 1]);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-
     gsap.to("#Container", {
       scrollTrigger: {
         trigger: "#Container",
@@ -44,12 +42,10 @@ export default function SemiFooter() {
     const close = document.getElementById("close")
 
     menusBtn?.addEventListener("click", () => {
-
       gsap.to(".navmenu", {
         x: 0,
         display: "flex",
         duration: 1,
-
       })
     })
     close?.addEventListener("click", () => {
@@ -93,7 +89,7 @@ export default function SemiFooter() {
           <ContainerTour color="black" className="tour">
             <header>
               <div className="title">Igor</div>
-              <nav>
+              <nav id="nav-index">
                 <h1>Let's work together</h1>
                 {menus ? (
                   <img src={menu} alt="" width={38} id="menus" onClick={() => setMenus(!menus)} />
