@@ -73,7 +73,6 @@ export default function MainTwo() {
               </a>
             </strong>{" "}
             <strong>
-              
             </strong>
           </h2>
           <p>Website Fullstack</p>
