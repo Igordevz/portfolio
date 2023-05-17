@@ -42,13 +42,11 @@ export default function Header() {
       },
       display: "flex",
     })
-
-
   })
 
   return (
     <>
-      <HeaderContent className="item">
+      <HeaderContent className="item" >
         <Logo>
           <h1>IGOR</h1>
         </Logo>

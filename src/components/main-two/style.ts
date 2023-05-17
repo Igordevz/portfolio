@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background: #000;
 
-  strong{
+  strong {
     margin-right: 5px;
   }
   height: 200vh;
@@ -25,14 +25,13 @@ export const Container = styled.div`
   .title strong {
     color: white;
   }
-  @media (max-width: 1042px){
+  @media (max-width: 1042px) {
     height: 100vh;
-    .title{
-     margin-left: 0px;
-    } 
+    .title {
+      margin-left: 0px;
+    }
   }
-  @media (max-height:653px){
-    
+  @media (max-height: 653px) {
     height: 150vh;
   }
 `;
@@ -45,9 +44,9 @@ export const CardLeft = styled.div`
     width: 500px;
     cursor: pointer;
   }
-  :nth-child(2){
-    img{
-    border-radius: 30px 30px 0px 30px;
+  :nth-child(2) {
+    img {
+      border-radius: 30px 30px 0px 30px;
     }
   }
   strong {
@@ -83,16 +82,15 @@ export const CardLeft = styled.div`
       color: white;
       text-decoration: none;
       .char {
+        display: none;
         background: none;
-        display: flex;
       }
       position: relative;
     }
-
     a:hover {
       transition: 1s;
       .char {
-        background: gray;
+        background: white;
         display: none;
       }
       color: white;
@@ -102,7 +100,7 @@ export const CardLeft = styled.div`
       border: 1px solid #7d27c1;
       padding: 10px;
       text-decoration: none;
-      border-radius:10px 10px  10px 0px;
+      border-radius: 10px 10px 10px 0px;
       transition: all.5s;
       color: #7d27c1;
     }
@@ -112,11 +110,10 @@ export const CardLeft = styled.div`
     }
     color: #e3e4e6;
   }
-  @media (max-width: 1042px){
+  @media (max-width: 1042px) {
     margin-top: 90px;
-    img{
+    img {
       display: none;
     }
   }
 `;
-

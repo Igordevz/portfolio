@@ -10,7 +10,7 @@ export default function MainTwo() {
     new SplitType("#openai");
     const hover = document.getElementById("gpt")
 
-    hover?.addEventListener("mouseover", () =>{
+    hover?.addEventListener("mouseover", () => {
       gsap.to(".char", {
         display: "inline-block",
         flexDirection: "row",
@@ -23,8 +23,8 @@ export default function MainTwo() {
         background: "none",
       });
     })
-   
-   
+
+
   });
 
   return (
@@ -69,7 +69,7 @@ export default function MainTwo() {
 
             <strong>
               <a href="www.instagram.com" target="_blank" id="gpt">
-               Instagram
+                Instagram
               </a>
             </strong>{" "}
             <strong>
@@ -85,7 +85,7 @@ export default function MainTwo() {
           </a>
         </div>
       </CardLeft>
-      
+
     </Container>
   );
 }

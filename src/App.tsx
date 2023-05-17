@@ -1,6 +1,6 @@
 import './App.css'
+import Contact from './components/contact/contact'
 import Header from './components/header/header'
-import SemiFooter from './components/main-three/main'
 import MainTwo from './components/main-two/mainTwo'
 import Main from './components/main/main'
 
@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <Main/>
       <MainTwo/>
-      <SemiFooter/>
+      <Contact/>
     </>
   )
 }
