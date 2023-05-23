@@ -1,6 +1,7 @@
 import { ContentMain } from "./style";
 
 export default function Main() {
+  
   return (
     <div>
       <ContentMain>
