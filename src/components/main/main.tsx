@@ -1,8 +1,7 @@
 import { ContentMain } from "./style";
 
 export default function Main() {
-  
-  return (
+  return (  
     <div>
       <ContentMain>
         <div className="center">
